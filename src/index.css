@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+html, body, #root, .app, .content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+.login-layout {
+  /* Add your custom styling for the login layout here */
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #555;
+}

@@ -1,8 +1,3 @@
-# React + Vite
+# SIPERJAK A
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SIPERJAK A (Sistem Pemeriksaan dan Jaminan Kepatuhan Pajak) adalah sebuah aplikasi berbasis web yang dirancang khusus untuk membantu pengelolaan dan pemantauan berita acara pemeriksaan (BAP) dalam lingkungan internal Badan Pendapatan Daerah Kota Malang Bidang P2. 

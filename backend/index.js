@@ -7,7 +7,13 @@ const authRoute = require('./routes/authRoutes')
 const app = express();
 const port = process.env.PORT || 3291;
 
-app.use(cors());
+const corsOptions = {
+  origin: 'https://si-perjak-a.vercel.app', // Replace with your frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use('/auth', authRoute);
 app.use('/api/events', eventsRoute);

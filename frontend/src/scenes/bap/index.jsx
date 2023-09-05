@@ -79,24 +79,30 @@ const BAP = () => {
           );
         },
       },
-    { 
-        field: "petugasPemeriksaan", 
-        headerName: "Petugas Pemeriksaan", 
-        flex: 1, 
+      {
+        field: "petugasPemeriksaan",
+        headerName: "Petugas Pemeriksaan",
+        flex: 1,
         minWidth: 150,
         renderCell: (params) => {
-            const petugasPemeriksaan = params.value;
-            const sentences = petugasPemeriksaan.includes(";") ? petugasPemeriksaan.split(";") : [petugasPemeriksaan];
-
+          const petugasPemeriksaan = params.value;
+          if (petugasPemeriksaan) {
+            const sentences = petugasPemeriksaan.includes(";")
+              ? petugasPemeriksaan.split(";")
+              : [petugasPemeriksaan];
+      
             return (
               <div>
                 {sentences.map((sentence, index) => (
                   <div key={index}>{sentence}</div>
                 ))}
               </div>
-            );            
-          },
-     },
+            );
+          } else {
+            return null;
+          }
+        },
+      },
     { field: "ketPemeriksaan", headerName: "Keterangan Pemeriksaan", flex: 1, minWidth: 150 },
     { 
         field: "dokumentasiPemeriksaan", 

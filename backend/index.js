@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3291;
 
 const corsOptions = {
-  origin: 'https://si-perjak-a.vercel.app', // Replace with your frontend URL
+  origin: 'http://localhost:5173', // Replace with your frontend URL
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 };

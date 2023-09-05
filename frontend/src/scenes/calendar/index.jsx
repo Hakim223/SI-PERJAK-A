@@ -75,7 +75,7 @@ const Calendar = () => {
     if (window.confirm(`Are you sure you want to delete the event '${selected.event.title}`)) {
       try {
         const eventId = selected.event.extendedProps._id;
-        const response = await fetch(`/api/events/${eventId}`, {
+        const response = await fetch(`http://localhost:3291/api/events/${eventId}`, {
           method: "DELETE",
         });
 
